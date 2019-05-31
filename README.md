@@ -14,5 +14,13 @@ apt update
 apt install --assume-yes git
 git clone https://github.com/agarcher/dotfiles
 cd dotfiles
-./install.sh
+./ubuntu.sh
+```
+
+## osx
+
+```bash
+git clone https://github.com/agarcher/dotfiles
+cd dotfiles
+./osx.sh
 ```
