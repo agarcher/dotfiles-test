@@ -4,6 +4,8 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+" ********** PLUGINS **********
+"
 call plug#begin()
 Plug 'tpope/vim-sensible'                           " default settings
 Plug 'altercation/vim-colors-solarized'             " colour scheme
@@ -11,7 +13,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'                             " fuzzy file search
 call plug#end()
 
-:let mapleader = " "
+" ********** SETTINGS **********
 
 " Highlight search results
 set hlsearch
@@ -24,12 +26,16 @@ colorscheme solarized
 " Fuzzy file search config
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
 
+" ********** KEYBINDINGS **********
+
+:let mapleader = " "
+
 " Clear search results
-map <Leader>/ :noh<Enter>
+nmap <Leader>/ :noh<CR>
 
 " Quick exit input mode
 imap jk <Esc>
 imap kj <Esc>
 
 " Fuzzy file search in working directory
-map <C-P> :FZF<Enter>
+nnoremap <C-P> :FZF<CR>
