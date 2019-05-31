@@ -13,5 +13,6 @@ Use this script to install.
 apt update
 apt install --assume-yes git
 git clone https://github.com/agarcher/dotfiles
+cd dotfiles
 ./install.sh
 ```
