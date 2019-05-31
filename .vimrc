@@ -26,6 +26,9 @@ colorscheme solarized
 " Fuzzy file search config
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
 
+" Mac Vim settings
+set guifont=Menlo:h15
+
 " ********** KEYBINDINGS **********
 
 :let mapleader = " "
