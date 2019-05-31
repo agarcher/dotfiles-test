@@ -6,4 +6,9 @@ endif
 
 call plug#begin()
 Plug 'tpope/vim-sensible'
+Plug 'altercation/vim-colors-solarized'
 call plug#end()
+
+syntax enable
+set background=dark
+colorscheme solarized
