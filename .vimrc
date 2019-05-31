@@ -9,6 +9,14 @@ Plug 'tpope/vim-sensible'
 Plug 'altercation/vim-colors-solarized'
 call plug#end()
 
+:let mapleader = " "
+
+" solarized config
 syntax enable
 set background=dark
 colorscheme solarized
+
+set hlsearch
+map <Leader>/ :noh<Enter>   " Clear search results
+imap jk <Esc>               " Quick exit input mode
+imap kj <Esc>
