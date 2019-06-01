@@ -36,9 +36,6 @@ set guifont=Menlo:h15
 " Clear search results
 nmap <Leader>/ :noh<CR>
 
-" Quick exit input mode
-imap jk <Esc>
-imap kj <Esc>
-
 " Fuzzy file search in working directory
 nnoremap <C-P> :FZF<CR>
+nnoremap <Leader><space> :FZF<CR>
